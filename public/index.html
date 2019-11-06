@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Declared Vars To Go Here -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="mysource_files/favicon.ico">
+
+  <!-- Metadata -->
+  <meta name="description" content="Basic NodeJs API using WebScokets">
+  <meta name="author" content="Breakermoob">
+  <title>Chat Usando NodeJs</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Page Name and Site Name -->
+  <title>Chat Usando NodeJs</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <h1></h1>
+  <script>
+    var socket = io.connect('http://localhost:3000', {
+      forceNew: true,
+    });
+
+    socket.on('message', function (message) {
+      console.log(message);
+    })
+
+  </script>
+</body>
+
+</html>
