@@ -1,5 +1,4 @@
 const db = require('mongoose');
-//mongodb+srv://db_user:EkIK16LEiF1goDVF@cluster0-ceujf.mongodb.net/test
 
 //Resulve las promesas
 db.Promise = global.Promise;
